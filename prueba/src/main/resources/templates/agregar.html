@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+	<head>
+		<title>Agregar</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" th:href="@{/bootstrap-3.3.7/css/bootstrap.min.css}" />
+		<link rel="stylesheet" th:href="@{/bootstrap-3.3.7/css/bootstrap-theme.min.css}" />
+	</head>
+	<body>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="page-header">
+						<h3>Agregar Maestro</h3>
+					</div>
+					<form id="agregarMaestro">
+						<div class="form-group">
+							<label>Nombre:</label>
+							<input class="form-control" name="nbMaestro" id="nbMaestro" />
+						</div>
+						<div class="form-group">
+							<label>Apellido Paterno:</label>
+							<input class="form-control" name="nbApPaterno" id="nbApPaterno" />
+						</div>
+						<div class="form-group">
+							<label>Apellido Materno:</label>
+							<input class="form-control" name="nbApMaterno" id="nbApMaterno" />
+						</div>
+						<div class="form-group">
+							<label>Fecha Nacimiento:</label>
+							<input type="date" class="form-control" name="fhNacimiento" id="fhNacimiento" />
+						</div>
+						<div class="form-group">
+							<label>Edad:</label>
+							<input type="number" class="form-control" name="nuEdad" id="nuEdad" />
+						</div>
+						<div class="form-group">
+							<label>Matricula:</label>
+							<input class="form-control" name="cdMatricula" id="cdMatricula" maxlength="10" />
+						</div>
+					</form>
+					<button class="btn btn-info pull-right" id="btnGuardar" onclick="btnGuardar()">
+						<strong>Guardar</strong>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<script th:src="@{/jquery-3.4.0/jquery.min.js}"></script>
+		<script th:src="@{/bootstrap-3.3.7/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/agregar.js}"></script>
+	</body>
+</html>
